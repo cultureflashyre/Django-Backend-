@@ -1,0 +1,45 @@
+INFO 2025-02-24 13:01:48,037 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 13:04:35,658 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 13:11:54,369 basehttp "OPTIONS /api/signup/ HTTP/1.1" 200 0
+DEBUG 2025-02-24 13:11:54,372 views Received signup request with data: {'first_name': 'agds', 'last_name': 'asf', 'phone_number': '1234567890', 'university_college': 'University C', 'university_college_id': '2', 'email': 'shiva@gmail.com', 'password': '123456', 'confirm_password': '123456'}
+INFO 2025-02-24 13:11:58,630 views User created successfully with email: shiva@gmail.com
+INFO 2025-02-24 13:11:58,634 basehttp "POST /api/signup/ HTTP/1.1" 201 39
+DEBUG 2025-02-24 13:14:00,081 views Received signup request with data: {'first_name': 'wreyw', 'last_name': 'sfrw44', 'phone_number': '9876543210', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiv173@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+INFO 2025-02-24 13:14:03,606 views User created successfully with email: shiv173@gmail.com
+INFO 2025-02-24 13:14:03,609 basehttp "POST /api/signup/ HTTP/1.1" 201 39
+INFO 2025-02-24 13:23:00,402 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\serializers.py changed, reloading.
+INFO 2025-02-24 13:23:01,736 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 13:23:22,232 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\views.py changed, reloading.
+INFO 2025-02-24 13:23:23,494 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 13:23:36,323 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\urls.py changed, reloading.
+INFO 2025-02-24 13:23:37,254 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 13:24:51,475 autoreload D:\Flashyre - Backend\240225\college_signup\college_signup\settings.py changed, reloading.
+INFO 2025-02-24 13:24:52,942 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 13:25:16,986 autoreload D:\Flashyre - Backend\240225\college_signup\college_signup\settings.py changed, reloading.
+INFO 2025-02-24 13:25:18,230 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 13:44:34,685 basehttp "OPTIONS /api/login/ HTTP/1.1" 200 0
+DEBUG 2025-02-24 13:44:34,691 views Received login request with data: {'email': 'shiva@gmail.com', 'password': '123456789'}
+ERROR 2025-02-24 13:44:37,752 views Login failed with errors: {'password': [ErrorDetail(string='Incorrect password', code='invalid')]}
+WARNING 2025-02-24 13:44:37,754 log Unauthorized: /api/login/
+WARNING 2025-02-24 13:44:37,754 basehttp "POST /api/login/ HTTP/1.1" 401 35
+DEBUG 2025-02-24 13:44:45,645 views Received login request with data: {'email': 'shiva@gmail.com', 'password': '123456789'}
+ERROR 2025-02-24 13:44:48,585 views Login failed with errors: {'password': [ErrorDetail(string='Incorrect password', code='invalid')]}
+WARNING 2025-02-24 13:44:48,585 log Unauthorized: /api/login/
+WARNING 2025-02-24 13:44:48,586 basehttp "POST /api/login/ HTTP/1.1" 401 35
+DEBUG 2025-02-24 13:45:44,926 views Received login request with data: {'email': 'shiv173@gmail.com', 'password': '123456'}
+ERROR 2025-02-24 13:45:47,698 views Login failed with errors: {'password': [ErrorDetail(string='Incorrect password', code='invalid')]}
+WARNING 2025-02-24 13:45:47,699 log Unauthorized: /api/login/
+WARNING 2025-02-24 13:45:47,700 basehttp "POST /api/login/ HTTP/1.1" 401 35
+DEBUG 2025-02-24 13:46:11,225 views Received login request with data: {'email': 'shiv173@gmail.com', 'password': '123456789'}
+INFO 2025-02-24 13:46:14,017 views User logged in successfully with email: shiv173@gmail.com
+INFO 2025-02-24 13:46:14,018 basehttp "POST /api/login/ HTTP/1.1" 200 30
+DEBUG 2025-02-24 13:55:27,878 views Received login request with data: {'email': 'shiv173@gmail.com', 'password': '123456789'}
+INFO 2025-02-24 13:55:31,056 views User logged in successfully with email: shiv173@gmail.com
+INFO 2025-02-24 13:55:31,057 basehttp "POST /api/login/ HTTP/1.1" 200 30
+DEBUG 2025-02-24 13:56:38,426 views Received login request with data: {'email': 'shiv173@gmail.com', 'password': '123456789'}
+INFO 2025-02-24 13:56:41,208 views User logged in successfully with email: shiv173@gmail.com
+INFO 2025-02-24 13:56:41,210 basehttp "POST /api/login/ HTTP/1.1" 200 30
+INFO 2025-02-24 15:12:56,269 autoreload Watching for file changes with StatReloader
+DEBUG 2025-02-24 15:14:45,935 views Received login request with data: {'email': 'shiv173@gmail.com', 'password': '123456789'}
+INFO 2025-02-24 15:14:49,116 views User logged in successfully with email: shiv173@gmail.com
+INFO 2025-02-24 15:14:49,118 basehttp "POST /api/login/ HTTP/1.1" 200 30
