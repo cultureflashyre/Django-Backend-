@@ -12,7 +12,7 @@ def signup_corporate(request):
         serializer.save()
         return Response({
             "message": "The data has been received",
-            "data": serializer.data
+            "data"  : serializer.data
         }, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
