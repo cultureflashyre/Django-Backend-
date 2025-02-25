@@ -35912,3 +35912,7 @@ File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\dj
             WHERE table_schema = DATABASE()
             ; args=None; alias=default
 (0.250) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\mysql\compiler.py first seen with mtime 1727432933.7490158
+File C:\Work -Backend\24th Feb\Django-Backend-\candidate_signup_backend\wsgi.py first seen with mtime 1740372335.633576
+File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1727432933.5345964
+File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py first seen with mtime 1727432933.780274
