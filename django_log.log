@@ -34876,3 +34876,22 @@ File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\dj
 File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\models\sql\compiler.py first seen with mtime 1727432933.780274
 File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\db\backends\mysql\compiler.py first seen with mtime 1727432933.7490158
 (0.266) SELECT `django_migrations`.`id`, `django_migrations`.`app`, `django_migrations`.`name`, `django_migrations`.`applied` FROM `django_migrations`; args=(); alias=default
+File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1727432933.5345964
+File C:\Work -Backend\24th Feb\Django-Backend-\candidate_signup_backend\wsgi.py first seen with mtime 1740372335.633576
+"OPTIONS /api/signup-corporate/ HTTP/1.1" 200 0
+File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1727432933.3936937
+File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\storage\fallback.py first seen with mtime 1727432933.3936937
+File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1727432933.378068
+File C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1727432933.5290902
+(0.250) 
+                SELECT VERSION(),
+                       @@sql_mode,
+                       @@default_storage_engine,
+                       @@sql_auto_is_null,
+                       @@lower_case_table_names,
+                       CONVERT_TZ('2001-01-01 01:00:00', 'UTC', 'UTC') IS NOT NULL
+            ; args=None; alias=default
+(0.250) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+(0.250) SELECT 1 AS `a` FROM `corporate_signup_corporate_signup` WHERE `corporate_signup_corporate_signup`.`email` = 'abhishekmk908@gmail.com' LIMIT 1; args=(1, 'abhishekmk908@gmail.com'); alias=default
+(0.281) INSERT INTO `corporate_signup_corporate_signup` (`first_name`, `last_name`, `company_name`, `phone_number`, `email`, `password`, `created_at`) VALUES ('Abhi', 'M K', 'CH', '7894561230', 'abhishekmk908@gmail.com', 'pbkdf2_sha256$870000$yOu6MkEwo3a190tDyRqIt9$UkPl1qC1P2dXGhQhuNwdVocwswFrHR8s3okAOWcLKf4=', '2025-02-25 04:44:11.891038'); args=['Abhi', 'M K', 'CH', '7894561230', 'abhishekmk908@gmail.com', 'pbkdf2_sha256$870000$yOu6MkEwo3a190tDyRqIt9$UkPl1qC1P2dXGhQhuNwdVocwswFrHR8s3okAOWcLKf4=', '2025-02-25 04:44:11.891038']; alias=default
+"POST /api/signup-corporate/ HTTP/1.1" 201 169
