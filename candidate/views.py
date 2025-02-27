@@ -2,6 +2,7 @@ import logging
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from django.http import JsonResponse
 from .models import Candidate
 from .serializers import CandidateSerializer
 from django.contrib.auth.hashers import check_password
@@ -35,7 +36,17 @@ def login_candidate(request):
             return Response({"message": "Login successful"}, status=status.HTTP_200_OK)
         else:
             logger.warning("Incorrect password")
-            return Response({"error": "invalid Email or Password"}, status=status.HTTP_401_UNAUTHORIZED)
+            return Response({"error": "Invalid Email or Password"}, status=status.HTTP_401_UNAUTHORIZED)
     except Candidate.DoesNotExist:
         logger.error("Email not found")
-        return Response({"error": "invalid Email or Password"}, status=status.HTTP_404_NOT_FOUND)
+        return Response({"error": "Invalid Email or Password"}, status=status.HTTP_404_NOT_FOUND)
+
+def check_phone(request):
+    phone = request.GET.get('phone')
+    exists = Candidate.objects.filter(phone_number=phone).exists()
+    return JsonResponse({'exists': exists})
+
+def check_email(request):
+    email = request.GET.get('email')
+    exists = Candidate.objects.filter(email=email).exists()
+    return JsonResponse({'exists': exists})
