@@ -1,9 +1,9 @@
 # accounts/serializers.py
-
 from rest_framework import serializers
 from .models import CollegeUser
 from django.contrib.auth.hashers import make_password, check_password
 
+# Existing Signup Serializer
 class CollegeUserSerializer(serializers.ModelSerializer):
     confirm_password = serializers.CharField(write_only=True)
 
@@ -31,6 +31,7 @@ class CollegeUserSerializer(serializers.ModelSerializer):
         validated_data['password'] = make_password(validated_data['password'])
         return CollegeUser.objects.create(**validated_data)
 
+# Existing Login Serializer
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField(write_only=True)
@@ -38,12 +39,11 @@ class LoginSerializer(serializers.Serializer):
     def validate(self, data):
         email = data.get('email')
         password = data.get('password')
-
         try:
             user = CollegeUser.objects.get(email=email)
             if not check_password(password, user.password):
                 raise serializers.ValidationError({"password": "Incorrect password"})
         except CollegeUser.DoesNotExist:
             raise serializers.ValidationError({"email": "User with this email does not exist"})
-        
         return data
+

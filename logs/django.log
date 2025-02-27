@@ -43,3 +43,1133 @@ INFO 2025-02-24 15:12:56,269 autoreload Watching for file changes with StatReloa
 DEBUG 2025-02-24 15:14:45,935 views Received login request with data: {'email': 'shiv173@gmail.com', 'password': '123456789'}
 INFO 2025-02-24 15:14:49,116 views User logged in successfully with email: shiv173@gmail.com
 INFO 2025-02-24 15:14:49,118 basehttp "POST /api/login/ HTTP/1.1" 200 30
+INFO 2025-02-24 19:30:21,934 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 19:34:20,133 autoreload Watching for file changes with StatReloader
+INFO 2025-02-24 19:41:21,904 autoreload D:\Flashyre - Backend\240225\college_signup\college_signup\urls.py changed, reloading.
+INFO 2025-02-25 10:09:30,105 autoreload Watching for file changes with StatReloader
+INFO 2025-02-25 10:13:36,080 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\views.py changed, reloading.
+INFO 2025-02-25 10:13:37,387 autoreload Watching for file changes with StatReloader
+INFO 2025-02-25 10:13:53,192 autoreload Watching for file changes with StatReloader
+INFO 2025-02-25 10:16:12,008 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\views.py changed, reloading.
+INFO 2025-02-25 10:16:14,407 autoreload Watching for file changes with StatReloader
+INFO 2025-02-25 10:16:25,618 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-25 10:16:33,575 log Not Found: /
+WARNING 2025-02-25 10:16:33,577 basehttp "GET / HTTP/1.1" 404 2481
+WARNING 2025-02-25 10:16:34,468 log Not Found: /favicon.ico
+WARNING 2025-02-25 10:16:34,469 basehttp "GET /favicon.ico HTTP/1.1" 404 2532
+INFO 2025-02-25 10:18:24,520 autoreload D:\Flashyre - Backend\240225\college_signup\college_signup\settings.py changed, reloading.
+INFO 2025-02-25 10:19:12,740 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-25 10:19:40,230 log Not Found: /
+WARNING 2025-02-25 10:19:40,237 basehttp "GET / HTTP/1.1" 404 2481
+INFO 2025-02-25 11:11:25,532 basehttp "OPTIONS /api/signup-candidate/ HTTP/1.1" 200 0
+WARNING 2025-02-25 11:11:25,607 log Not Found: /api/signup-candidate/
+WARNING 2025-02-25 11:11:25,609 basehttp "POST /api/signup-candidate/ HTTP/1.1" 404 3193
+INFO 2025-02-25 17:11:23,337 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-25 17:11:55,091 log Not Found: /
+WARNING 2025-02-25 17:11:55,093 basehttp "GET / HTTP/1.1" 404 2481
+INFO 2025-02-27 09:43:33,933 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 10:17:08,098 basehttp "OPTIONS /api/signup/ HTTP/1.1" 200 0
+DEBUG 2025-02-27 10:17:08,109 views Received signup request with data: {'first_name': 'sss', 'last_name': 'eeee', 'phone_number': '1234567890', 'university_college': 'University A', 'university_college_id': '11ddde33', 'email': 'shiva@gmail.com', 'password': '123456', 'confirm_password': '123456'}
+ERROR 2025-02-27 10:17:10,997 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 10:17:11,000 log Bad Request: /api/signup/
+WARNING 2025-02-27 10:17:11,002 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 10:17:41,295 views Received signup request with data: {'first_name': 'sss', 'last_name': 'eeee', 'phone_number': '81478005853', 'university_college': 'University A', 'university_college_id': '11ddde33', 'email': 'shiva03@gmail.com', 'password': '123456', 'confirm_password': '123456'}
+ERROR 2025-02-27 10:17:47,849 log Internal Server Error: /api/signup/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.OperationalError: (1054, "Unknown column 'profile_picture' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\views.py", line 18, in post
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\serializers.py", line 32, in create
+    return CollegeUser.objects.create(**validated_data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.OperationalError: (1054, "Unknown column 'profile_picture' in 'field list'")
+ERROR 2025-02-27 10:17:47,941 basehttp "POST /api/signup/ HTTP/1.1" 500 229925
+DEBUG 2025-02-27 10:23:51,018 views Received signup request with data: {'first_name': 'sss', 'last_name': 'eeee', 'phone_number': '81478005853', 'university_college': 'University A', 'university_college_id': '11ddde33', 'email': 'shiva03@gmail.com', 'password': '123456', 'confirm_password': '123456'}
+ERROR 2025-02-27 10:23:57,175 log Internal Server Error: /api/signup/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.OperationalError: (1054, "Unknown column 'profile_picture' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\views.py", line 18, in post
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\serializers.py", line 32, in create
+    return CollegeUser.objects.create(**validated_data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.OperationalError: (1054, "Unknown column 'profile_picture' in 'field list'")
+ERROR 2025-02-27 10:23:57,255 basehttp "POST /api/signup/ HTTP/1.1" 500 229925
+INFO 2025-02-27 10:27:37,987 autoreload Watching for file changes with StatReloader
+DEBUG 2025-02-27 10:36:11,103 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ads', 'phone_number': '1234567890', 'university_college': 'University A', 'university_college_id': '11ddee33', 'email': 'shiv18@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 10:36:17,262 log Internal Server Error: /api/signup/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.OperationalError: (1054, "Unknown column 'profile_picture' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\views.py", line 18, in post
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\serializers.py", line 32, in create
+    return CollegeUser.objects.create(**validated_data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.OperationalError: (1054, "Unknown column 'profile_picture' in 'field list'")
+ERROR 2025-02-27 10:36:17,338 basehttp "POST /api/signup/ HTTP/1.1" 500 229888
+INFO 2025-02-27 10:40:03,140 autoreload Watching for file changes with StatReloader
+WARNING 2025-02-27 10:40:24,165 log Not Found: /
+WARNING 2025-02-27 10:40:24,174 basehttp "GET / HTTP/1.1" 404 2481
+WARNING 2025-02-27 10:40:25,186 log Not Found: /favicon.ico
+WARNING 2025-02-27 10:40:25,187 basehttp "GET /favicon.ico HTTP/1.1" 404 2532
+INFO 2025-02-27 10:51:29,172 autoreload Watching for file changes with StatReloader
+DEBUG 2025-02-27 10:52:41,921 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1234567889', 'university_college': 'University B', 'university_college_id': '11ff33', 'email': 'shiva03@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 10:52:46,245 log Internal Server Error: /api/signup/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.OperationalError: (1054, "Unknown column 'profile_picture' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\views.py", line 18, in post
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\serializers.py", line 32, in create
+    return CollegeUser.objects.create(**validated_data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.OperationalError: (1054, "Unknown column 'profile_picture' in 'field list'")
+ERROR 2025-02-27 10:52:46,269 basehttp "POST /api/signup/ HTTP/1.1" 500 229871
+WARNING 2025-02-27 10:54:35,411 log Not Found: /api/signup-cillege/
+WARNING 2025-02-27 10:54:35,412 basehttp "GET /api/signup-cillege/ HTTP/1.1" 404 3186
+WARNING 2025-02-27 10:54:35,955 log Not Found: /favicon.ico
+WARNING 2025-02-27 10:54:35,957 basehttp "GET /favicon.ico HTTP/1.1" 404 2532
+INFO 2025-02-27 10:58:11,118 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\models.py changed, reloading.
+INFO 2025-02-27 10:58:12,202 autoreload Watching for file changes with StatReloader
+DEBUG 2025-02-27 10:58:19,856 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1234567889', 'university_college': 'University B', 'university_college_id': '11ff33', 'email': 'shiva03@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 10:58:23,969 log Internal Server Error: /api/signup/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.OperationalError: (1054, "Unknown column 'resume' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\views.py", line 18, in post
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\serializers.py", line 32, in create
+    return CollegeUser.objects.create(**validated_data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.OperationalError: (1054, "Unknown column 'resume' in 'field list'")
+ERROR 2025-02-27 10:58:24,058 basehttp "POST /api/signup/ HTTP/1.1" 500 228642
+INFO 2025-02-27 10:58:37,453 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\models.py changed, reloading.
+INFO 2025-02-27 10:58:38,379 autoreload Watching for file changes with StatReloader
+DEBUG 2025-02-27 10:58:53,113 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1234567889', 'university_college': 'University B', 'university_college_id': '11ff33', 'email': 'shiva03@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+INFO 2025-02-27 10:58:56,672 views User created successfully with email: shiva03@gmail.com
+INFO 2025-02-27 10:58:56,673 basehttp "POST /api/signup/ HTTP/1.1" 201 39
+INFO 2025-02-27 11:45:28,454 autoreload Watching for file changes with StatReloader
+DEBUG 2025-02-27 11:48:33,368 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'gsg', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 11:48:35,615 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 11:48:35,625 log Bad Request: /api/signup/
+WARNING 2025-02-27 11:48:35,627 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 11:48:53,577 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'gsg', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva55@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+INFO 2025-02-27 11:48:57,261 views User created successfully with email: shiva55@gmail.com
+INFO 2025-02-27 11:48:57,262 basehttp "POST /api/signup/ HTTP/1.1" 201 39
+DEBUG 2025-02-27 11:52:56,647 views Received signup request with data: {'first_name': 'abhishek', 'last_name': 'aa', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 11:52:58,898 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 11:52:58,899 log Bad Request: /api/signup/
+WARNING 2025-02-27 11:52:58,900 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 11:53:15,100 views Received signup request with data: {'first_name': 'abhishek', 'last_name': 'aa', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva35@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+INFO 2025-02-27 11:53:18,819 views User created successfully with email: shiva35@gmail.com
+INFO 2025-02-27 11:53:18,820 basehttp "POST /api/signup/ HTTP/1.1" 201 39
+DEBUG 2025-02-27 11:59:37,395 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'gsg', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 11:59:39,647 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 11:59:39,650 log Bad Request: /api/signup/
+WARNING 2025-02-27 11:59:39,652 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 11:59:48,381 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'gsg', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva34@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+DEBUG 2025-02-27 11:59:50,439 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'gsg', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva34@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+INFO 2025-02-27 11:59:52,045 views User created successfully with email: shiva34@gmail.com
+INFO 2025-02-27 11:59:52,047 basehttp "POST /api/signup/ HTTP/1.1" 201 39
+ERROR 2025-02-27 11:59:52,708 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 11:59:52,710 log Bad Request: /api/signup/
+WARNING 2025-02-27 11:59:52,711 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 12:03:39,450 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 12:03:42,564 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 12:03:42,567 log Bad Request: /api/signup/
+WARNING 2025-02-27 12:03:42,569 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+INFO 2025-02-27 12:08:28,883 basehttp "OPTIONS /api/login/ HTTP/1.1" 200 0
+DEBUG 2025-02-27 12:08:28,888 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+ERROR 2025-02-27 12:08:31,472 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:31,473 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:31,475 basehttp "POST /api/login/ HTTP/1.1" 401 49
+DEBUG 2025-02-27 12:08:35,727 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+ERROR 2025-02-27 12:08:37,958 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:37,963 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:37,965 basehttp "POST /api/login/ HTTP/1.1" 401 49
+DEBUG 2025-02-27 12:08:38,844 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+DEBUG 2025-02-27 12:08:39,021 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+DEBUG 2025-02-27 12:08:39,471 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+DEBUG 2025-02-27 12:08:39,640 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+DEBUG 2025-02-27 12:08:39,792 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+DEBUG 2025-02-27 12:08:39,955 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+ERROR 2025-02-27 12:08:41,002 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:41,003 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:41,004 basehttp "POST /api/login/ HTTP/1.1" 401 49
+DEBUG 2025-02-27 12:08:41,006 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+ERROR 2025-02-27 12:08:41,350 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:41,353 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:41,354 basehttp "POST /api/login/ HTTP/1.1" 401 49
+DEBUG 2025-02-27 12:08:41,357 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+ERROR 2025-02-27 12:08:41,800 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:41,802 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:41,805 basehttp "POST /api/login/ HTTP/1.1" 401 49
+DEBUG 2025-02-27 12:08:41,814 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+ERROR 2025-02-27 12:08:41,995 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:41,998 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:42,000 basehttp "POST /api/login/ HTTP/1.1" 401 49
+DEBUG 2025-02-27 12:08:42,008 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+ERROR 2025-02-27 12:08:42,110 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:42,111 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:42,112 basehttp "POST /api/login/ HTTP/1.1" 401 49
+DEBUG 2025-02-27 12:08:42,115 views Received login request with data: {'email': 'shivae@gmail.com', 'password': 'ytywtywyw'}
+ERROR 2025-02-27 12:08:42,298 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:42,300 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:42,301 basehttp "POST /api/login/ HTTP/1.1" 401 49
+ERROR 2025-02-27 12:08:43,036 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:43,037 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:43,038 basehttp "POST /api/login/ HTTP/1.1" 401 49
+ERROR 2025-02-27 12:08:43,471 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:43,472 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:43,473 basehttp "POST /api/login/ HTTP/1.1" 401 49
+ERROR 2025-02-27 12:08:43,854 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:43,856 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:43,859 basehttp "POST /api/login/ HTTP/1.1" 401 49
+ERROR 2025-02-27 12:08:44,106 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:44,107 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:44,108 basehttp "POST /api/login/ HTTP/1.1" 401 49
+ERROR 2025-02-27 12:08:44,273 views Login failed with errors: {'email': [ErrorDetail(string='User with this email does not exist', code='invalid')]}
+WARNING 2025-02-27 12:08:44,275 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:08:44,276 basehttp "POST /api/login/ HTTP/1.1" 401 49
+DEBUG 2025-02-27 12:34:15,170 views Received login request with data: {'email': 'shiva@gmail.com', 'password': '123456789'}
+ERROR 2025-02-27 12:34:19,674 views Login failed with errors: {'password': [ErrorDetail(string='Incorrect password', code='invalid')]}
+WARNING 2025-02-27 12:34:19,675 log Unauthorized: /api/login/
+WARNING 2025-02-27 12:34:19,675 basehttp "POST /api/login/ HTTP/1.1" 401 35
+DEBUG 2025-02-27 12:34:41,477 views Received login request with data: {'email': 'shiv173@gmail.com', 'password': '123456789'}
+INFO 2025-02-27 12:34:44,470 views User logged in successfully with email: shiv173@gmail.com
+INFO 2025-02-27 12:34:44,471 basehttp "POST /api/login/ HTTP/1.1" 200 30
+INFO 2025-02-27 12:44:49,599 basehttp "OPTIONS /api/signup/ HTTP/1.1" 200 0
+DEBUG 2025-02-27 12:44:49,601 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'gsg', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456', 'confirm_password': '123456'}
+ERROR 2025-02-27 12:44:51,859 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 12:44:51,861 log Bad Request: /api/signup/
+WARNING 2025-02-27 12:44:51,862 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 12:51:49,214 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 12:51:51,467 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 12:51:51,473 log Bad Request: /api/signup/
+WARNING 2025-02-27 12:51:51,474 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 12:55:24,986 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'gsg', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 12:55:27,226 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 12:55:27,227 log Bad Request: /api/signup/
+WARNING 2025-02-27 12:55:27,227 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 12:59:21,669 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'gsg', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 12:59:24,109 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 12:59:24,117 log Bad Request: /api/signup/
+WARNING 2025-02-27 12:59:24,119 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 13:00:43,028 views Received signup request with data: {'first_name': 'ddd', 'last_name': 'ddd', 'phone_number': '1234567889', 'university_college': 'University B', 'university_college_id': '12fddf333', 'email': 'shiva66@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+INFO 2025-02-27 13:00:46,788 views User created successfully with email: shiva66@gmail.com
+INFO 2025-02-27 13:00:46,791 basehttp "POST /api/signup/ HTTP/1.1" 201 39
+DEBUG 2025-02-27 13:08:34,746 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 13:08:37,742 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 13:08:37,745 log Bad Request: /api/signup/
+WARNING 2025-02-27 13:08:37,746 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 13:22:04,783 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'gsg', 'phone_number': '1234567889', 'university_college': 'University B', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 13:22:08,347 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 13:22:08,351 log Bad Request: /api/signup/
+WARNING 2025-02-27 13:22:08,353 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 13:34:44,382 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 13:34:47,337 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 13:34:47,340 log Bad Request: /api/signup/
+WARNING 2025-02-27 13:34:47,342 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 14:39:11,045 views Received signup request with data: {'first_name': 'ddd', 'last_name': 'ddd', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456', 'confirm_password': '123456'}
+ERROR 2025-02-27 14:39:14,034 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 14:39:14,037 log Bad Request: /api/signup/
+WARNING 2025-02-27 14:39:14,038 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+INFO 2025-02-27 14:47:39,620 basehttp "OPTIONS /api/signup/ HTTP/1.1" 200 0
+DEBUG 2025-02-27 14:47:39,624 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456', 'confirm_password': '123456'}
+ERROR 2025-02-27 14:47:42,755 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 14:47:42,756 log Bad Request: /api/signup/
+WARNING 2025-02-27 14:47:42,758 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+DEBUG 2025-02-27 15:11:06,402 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'gsg', 'phone_number': '1234567889', 'university_college': 'University A', 'university_college_id': '12fddf333', 'email': 'shiva@gmail.com', 'password': '123456', 'confirm_password': '123456'}
+ERROR 2025-02-27 15:11:08,626 views Signup failed with errors: {'email': [ErrorDetail(string='college user with this email already exists.', code='unique')]}
+WARNING 2025-02-27 15:11:08,628 log Bad Request: /api/signup/
+WARNING 2025-02-27 15:11:08,628 basehttp "POST /api/signup/ HTTP/1.1" 400 58
+INFO 2025-02-27 15:11:39,344 basehttp "OPTIONS /api/login/ HTTP/1.1" 200 0
+DEBUG 2025-02-27 15:11:39,351 views Received login request with data: {'email': 'shiva@gmail.com', 'password': '123456789'}
+ERROR 2025-02-27 15:11:42,185 views Login failed with errors: {'password': [ErrorDetail(string='Incorrect password', code='invalid')]}
+WARNING 2025-02-27 15:11:42,186 log Unauthorized: /api/login/
+WARNING 2025-02-27 15:11:42,187 basehttp "POST /api/login/ HTTP/1.1" 401 35
+DEBUG 2025-02-27 15:11:42,521 views Received login request with data: {'email': 'shiva@gmail.com', 'password': '123456789'}
+ERROR 2025-02-27 15:11:45,351 views Login failed with errors: {'password': [ErrorDetail(string='Incorrect password', code='invalid')]}
+WARNING 2025-02-27 15:11:45,352 log Unauthorized: /api/login/
+WARNING 2025-02-27 15:11:45,353 basehttp "POST /api/login/ HTTP/1.1" 401 35
+DEBUG 2025-02-27 15:11:48,758 views Received login request with data: {'email': 'shiva@gmail.com', 'password': '123456789'}
+ERROR 2025-02-27 15:11:51,762 views Login failed with errors: {'password': [ErrorDetail(string='Incorrect password', code='invalid')]}
+WARNING 2025-02-27 15:11:51,764 log Unauthorized: /api/login/
+WARNING 2025-02-27 15:11:51,767 basehttp "POST /api/login/ HTTP/1.1" 401 35
+DEBUG 2025-02-27 15:26:20,922 views Received login request with data: {'email': 'shiva@gmail.com', 'password': 'wtywrwrw'}
+ERROR 2025-02-27 15:26:24,357 views Login failed with errors: {'password': [ErrorDetail(string='Incorrect password', code='invalid')]}
+WARNING 2025-02-27 15:26:24,358 log Unauthorized: /api/login/
+WARNING 2025-02-27 15:26:24,359 basehttp "POST /api/login/ HTTP/1.1" 401 35
+INFO 2025-02-27 16:00:48,605 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\views.py changed, reloading.
+INFO 2025-02-27 16:00:50,586 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:02:55,505 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\urls.py changed, reloading.
+INFO 2025-02-27 16:02:56,605 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:03:05,025 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\urls.py changed, reloading.
+INFO 2025-02-27 16:03:06,011 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:06:54,292 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\models.py changed, reloading.
+INFO 2025-02-27 16:06:55,383 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:09:24,809 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\views.py changed, reloading.
+INFO 2025-02-27 16:09:25,697 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:10:14,309 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\serializers.py changed, reloading.
+INFO 2025-02-27 16:10:16,349 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:10:52,590 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\views.py changed, reloading.
+INFO 2025-02-27 16:10:53,531 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:11:31,557 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\urls.py changed, reloading.
+INFO 2025-02-27 16:11:32,447 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:12:17,470 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\urls.py changed, reloading.
+INFO 2025-02-27 16:12:18,471 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:14:10,320 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\views.py changed, reloading.
+INFO 2025-02-27 16:14:11,342 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:14:48,017 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\views.py changed, reloading.
+INFO 2025-02-27 16:14:48,961 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:17:20,302 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\urls.py changed, reloading.
+INFO 2025-02-27 16:17:21,336 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:17:31,896 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\urls.py changed, reloading.
+INFO 2025-02-27 16:17:32,891 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:18:59,352 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\urls.py changed, reloading.
+INFO 2025-02-27 16:19:00,380 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:19:31,501 autoreload D:\Flashyre - Backend\240225\college_signup\accounts\urls.py changed, reloading.
+INFO 2025-02-27 16:19:32,455 autoreload Watching for file changes with StatReloader
+INFO 2025-02-27 16:36:01,416 basehttp "GET /api/check-phone/?phone=1234567889 HTTP/1.1" 200 16
+INFO 2025-02-27 16:36:24,369 basehttp "GET /api/check-phone/?phone=1234567889 HTTP/1.1" 200 16
+INFO 2025-02-27 16:48:02,128 basehttp "GET /api/check-phone/?phone=1234567889 HTTP/1.1" 200 16
+INFO 2025-02-27 16:48:10,780 basehttp "GET /api/check-email/?email=shiva@gmail.com HTTP/1.1" 200 16
+INFO 2025-02-27 16:48:25,193 basehttp - Broken pipe from ('127.0.0.1', 54849)
+INFO 2025-02-27 16:48:25,469 basehttp "GET /api/check-phone/?phone=1234567889 HTTP/1.1" 200 16
+INFO 2025-02-27 16:51:56,707 basehttp - Broken pipe from ('127.0.0.1', 54852)
+INFO 2025-02-27 16:51:57,259 basehttp "GET /api/check-phone/?phone=1234567889 HTTP/1.1" 200 16
+INFO 2025-02-27 16:52:05,040 basehttp - Broken pipe from ('127.0.0.1', 55053)
+INFO 2025-02-27 16:52:05,979 basehttp - Broken pipe from ('127.0.0.1', 55055)
+INFO 2025-02-27 16:52:09,143 basehttp "GET /api/check-email/?email=shiva@gmail.com HTTP/1.1" 200 16
+INFO 2025-02-27 16:58:31,856 basehttp "GET /api/check-phone/?phone=1234567889 HTTP/1.1" 200 16
+INFO 2025-02-27 16:58:40,878 basehttp "GET /api/check-email/?email=shiva@gmail.com HTTP/1.1" 200 16
+INFO 2025-02-27 17:00:57,076 basehttp "GET /api/check-phone/?phone=1234567889 HTTP/1.1" 200 16
+INFO 2025-02-27 17:01:15,028 basehttp "GET /api/check-email/?email=shiva@gmail.com HTTP/1.1" 200 16
+INFO 2025-02-27 17:02:46,636 basehttp "GET /api/check-phone/?phone=1234567890 HTTP/1.1" 200 16
+INFO 2025-02-27 17:03:02,846 basehttp "GET /api/check-phone/?phone=9876543210 HTTP/1.1" 200 16
+INFO 2025-02-27 17:03:08,676 basehttp - Broken pipe from ('127.0.0.1', 55604)
+ERROR 2025-02-27 17:03:13,136 log Internal Server Error: /api/check-email/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 256, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+MySQLdb.OperationalError: (2002, "Can't connect to server on '34.41.136.47' (10060)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\views.py", line 61, in check_email
+    exists = CollegeUser.objects.filter(email=email).exists()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\query.py", line 660, in has_results
+    return compiler.has_results()
+           ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1542, in has_results
+    return bool(self.execute_sql(SINGLE))
+                ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1572, in execute_sql
+    cursor = self.connection.cursor()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\base\base.py", line 320, in cursor
+    return self._cursor()
+           ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\base\base.py", line 296, in _cursor
+    self.ensure_connection()
+    ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\base\base.py", line 278, in ensure_connection
+    with self.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\base\base.py", line 279, in ensure_connection
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\base\base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 256, in get_new_connection
+    connection = Database.connect(**conn_params)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 200, in __init__
+    super().__init__(*args, **kwargs2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: (2002, "Can't connect to server on '34.41.136.47' (10060)")
+ERROR 2025-02-27 17:03:13,163 basehttp "GET /api/check-email/?email=shiva67@gmail.com HTTP/1.1" 500 215699
+INFO 2025-02-27 17:03:23,452 basehttp "GET /api/check-phone/?phone=1122334455 HTTP/1.1" 200 17
+INFO 2025-02-27 17:04:01,537 basehttp "GET /api/check-phone/?phone=9876543210 HTTP/1.1" 200 16
+INFO 2025-02-27 17:04:05,497 basehttp "GET /api/check-email/?email=shiva@gmail.com HTTP/1.1" 200 16
+INFO 2025-02-27 17:04:08,897 basehttp - Broken pipe from ('127.0.0.1', 55695)
+INFO 2025-02-27 17:04:09,619 basehttp - Broken pipe from ('127.0.0.1', 55697)
+INFO 2025-02-27 17:04:11,850 basehttp - Broken pipe from ('127.0.0.1', 55704)
+INFO 2025-02-27 17:04:12,244 basehttp - Broken pipe from ('127.0.0.1', 55708)
+INFO 2025-02-27 17:04:12,560 basehttp - Broken pipe from ('127.0.0.1', 55710)
+INFO 2025-02-27 17:04:13,314 basehttp "GET /api/check-email/?email=shiva70@gmail.com HTTP/1.1" 200 17
+INFO 2025-02-27 17:04:19,425 basehttp "GET /api/check-phone/?phone=1122334455 HTTP/1.1" 200 17
+INFO 2025-02-27 17:04:28,263 basehttp "OPTIONS /api/signup/ HTTP/1.1" 200 0
+DEBUG 2025-02-27 17:04:28,268 views Received signup request with data: {'first_name': 'trewtrew', 'last_name': 'ystta', 'phone_number': '1122334455', 'university_college': 'University A', 'university_college_id': '11dd33', 'email': 'shiva70@gmail.com', 'password': '123456789'}
+ERROR 2025-02-27 17:04:30,945 views Signup failed with errors: {'confirm_password': [ErrorDetail(string='This field is required.', code='required')]}
+WARNING 2025-02-27 17:04:30,947 log Bad Request: /api/signup/
+WARNING 2025-02-27 17:04:30,948 basehttp "POST /api/signup/ HTTP/1.1" 400 48
+DEBUG 2025-02-27 17:05:08,444 views Received signup request with data: {'first_name': 'trewtrew', 'last_name': 'ystta', 'phone_number': '1122334455', 'university_college': 'University A', 'university_college_id': '11dd33', 'email': 'shiva70@gmail.com', 'password': 'Password@123'}
+ERROR 2025-02-27 17:05:11,262 views Signup failed with errors: {'confirm_password': [ErrorDetail(string='This field is required.', code='required')]}
+WARNING 2025-02-27 17:05:11,266 log Bad Request: /api/signup/
+WARNING 2025-02-27 17:05:11,269 basehttp "POST /api/signup/ HTTP/1.1" 400 48
+INFO 2025-02-27 17:09:45,839 basehttp "GET /api/check-phone/?phone=1234567889 HTTP/1.1" 200 16
+INFO 2025-02-27 17:09:54,414 basehttp "GET /api/check-phone/?phone=1122334455 HTTP/1.1" 200 17
+INFO 2025-02-27 17:10:01,370 basehttp "GET /api/check-email/?email=shiva@gmail.com HTTP/1.1" 200 16
+INFO 2025-02-27 17:10:06,826 basehttp - Broken pipe from ('127.0.0.1', 56128)
+INFO 2025-02-27 17:10:07,686 basehttp "GET /api/check-email/?email=shiva70@gmail.com HTTP/1.1" 200 17
+DEBUG 2025-02-27 17:10:23,275 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1122334455', 'university_college': 'University A', 'university_college_id': '11dd33', 'email': 'shiva70@gmail.com', 'password': '123456789'}
+ERROR 2025-02-27 17:10:29,605 views Signup failed with errors: {'confirm_password': [ErrorDetail(string='This field is required.', code='required')]}
+WARNING 2025-02-27 17:10:29,607 log Bad Request: /api/signup/
+WARNING 2025-02-27 17:10:29,609 basehttp "POST /api/signup/ HTTP/1.1" 400 48
+DEBUG 2025-02-27 17:10:50,386 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1122334455', 'university_college': 'University A', 'university_college_id': '11dd33', 'email': 'shiva70@gmail.com', 'password': 'pass@12345'}
+ERROR 2025-02-27 17:10:53,354 views Signup failed with errors: {'confirm_password': [ErrorDetail(string='This field is required.', code='required')]}
+WARNING 2025-02-27 17:10:53,356 log Bad Request: /api/signup/
+WARNING 2025-02-27 17:10:53,358 basehttp "POST /api/signup/ HTTP/1.1" 400 48
+INFO 2025-02-27 17:39:45,484 basehttp "GET /api/check-phone/?phone=1234567889 HTTP/1.1" 200 16
+INFO 2025-02-27 17:39:53,697 basehttp "GET /api/check-phone/?phone=1122334455 HTTP/1.1" 200 17
+INFO 2025-02-27 17:40:09,235 basehttp "GET /api/check-email/?email=shiva@gmail.com HTTP/1.1" 200 16
+INFO 2025-02-27 17:40:13,360 basehttp - Broken pipe from ('127.0.0.1', 57451)
+INFO 2025-02-27 17:40:14,352 basehttp - Broken pipe from ('127.0.0.1', 57459)
+INFO 2025-02-27 17:40:15,948 basehttp - Broken pipe from ('127.0.0.1', 57461)
+INFO 2025-02-27 17:40:16,719 basehttp "GET /api/check-email/?email=shiva70@gmail.com HTTP/1.1" 200 17
+DEBUG 2025-02-27 17:40:32,067 views Received signup request with data: {'first_name': 'dgjd', 'last_name': 'ddd', 'phone_number': '1122334455', 'university_college': 'University B', 'university_college_id': '11dd33', 'email': 'shiva70@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+ERROR 2025-02-27 17:40:36,692 log Internal Server Error: /api/signup/
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+MySQLdb.OperationalError: (1054, "Unknown column 'created_at' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\views.py", line 17, in post
+    serializer.save()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Flashyre - Backend\240225\college_signup\accounts\serializers.py", line 32, in create
+    return CollegeUser.objects.create(**validated_data)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 892, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 998, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1161, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\base.py", line 1202, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+    ~~~~~~~~^^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.OperationalError: (1054, "Unknown column 'created_at' in 'field list'")
+ERROR 2025-02-27 17:40:36,729 basehttp "POST /api/signup/ HTTP/1.1" 500 229367
+INFO 2025-02-27 17:53:58,101 autoreload Watching for file changes with StatReloader
+DEBUG 2025-02-27 17:54:06,181 views Received signup request with data: {'first_name': 'ds', 'last_name': 'ds', 'phone_number': '1122334455', 'university_college': 'University B', 'university_college_id': '11dd33', 'email': 'shiva70@gmail.com', 'password': '123456789', 'confirm_password': '123456789'}
+INFO 2025-02-27 17:54:10,258 views User created successfully with email: shiva70@gmail.com
+INFO 2025-02-27 17:54:10,264 basehttp "POST /api/signup/ HTTP/1.1" 201 209
+INFO 2025-02-27 17:55:38,624 basehttp "GET /api/check-phone/?phone=1122334455 HTTP/1.1" 200 16
+INFO 2025-02-27 17:55:48,240 basehttp "GET /api/check-email/?email=shiva70@gmail.com HTTP/1.1" 200 16

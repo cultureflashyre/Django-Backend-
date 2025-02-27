@@ -137,6 +137,11 @@ LOG_DIR = os.path.join(BASE_DIR, 'logs')
 if not os.path.exists(LOG_DIR):
     os.makedirs(LOG_DIR)
     
+    
+    # Media settings for file uploads
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    
 # Logging configuration
 LOGGING = {
     'version': 1,
